@@ -105,7 +105,7 @@ const Home = (props: HomeProps) => {
         if (!status?.err) {
           setAlertState({
             open: true,
-            message: "Congratulations! Mint succeeded!",
+            message: "Congratulations! Mint Complete!",
             severity: "success",
           });
         } else {
@@ -166,18 +166,18 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <main>
+    <main
+     style={{
+       backgroundColor: "#1D1B1B",
+       padding: 50,
+       }}>
       {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+        <p>Wallet: {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
 
       {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
-
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
+      {wallet && <p>Price: 0.7 Sol</p>}
 
       <MintContainer>
         {!wallet ? (

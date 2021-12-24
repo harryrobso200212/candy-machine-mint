@@ -9,6 +9,19 @@ body {
   color: #FFFFFF;
 }
 
+body{
+  background-image: url(https://i.ibb.co/txCyLNX/background.png);
+  background-size: fill;
+  background-position: center;
+}
+
+#root{
+  display: grid;
+  text-align: center;
+  place-content: center;
+  min-height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
