@@ -177,7 +177,7 @@ const Home = (props: HomeProps) => {
 
       {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
-      {wallet && <p>Price: 0.7 Sol</p>}
+      {wallet && <p>Price: 0.25 Sol</p>}
 
       <MintContainer>
         {!wallet ? (
